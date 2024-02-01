@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Experience</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+        }
+
+        h1, h2 {
+            color: #cc0000;
+        }
+
+        #hearts-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: hearts-flowers 5s forwards;
+        }
+
+        .heart, .flower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ffcccc;
+            border-radius: 50%;
+        }
+
+        .heart {
+            background-color: #ff6666;
+        }
+
+        @keyframes hearts-flowers {
+            to {
+                transform: translate(-50%, -50%) translateY(-1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter the Secret Password</h1>
+
+    <form id="passwordForm" onsubmit="validatePassword(event)">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validatePassword(event) {
+            event.preventDefault();
+            var password = document.getElementById('password').value;
+            
+            if (password === 'ap162428') {
+                document.body.innerHTML = `
+                    <h1>Will You Be My Valentine?</h1>
+                    <form id="valentineForm" onsubmit="askValentine(event)">
+                        <label for="valentineAnswer">Choose your answer:</label>
+                        <select id="valentineAnswer" name="valentineAnswer" required>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                        <button type="submit">Submit</button>
+                    </form>
+                `;
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+
+        function askValentine(event) {
+            event.preventDefault();
+            var answer = document.getElementById('valentineAnswer').value;
+
+            if (answer === 'yes') {
+                document.body.innerHTML = `
+                    <h1>I Love You Too!</h1>
+                    <p>Thank you for being my Valentine da. You mean everything to me, hope andha hamper unaku ipo vandhurukum.. athule oru letter iruku but athula sola mudiyathadhu sola than this one.. i feel so lucky and blessed to have you in my life! i never thought i would do all these for valentines day. i wanna cuddle with you now but we couldn't..  and I cherish every moment with you. Wishing us many more happy moments together!</p>
+                `;
+            } else {
+                alert('Kondruven!! olunga yes click panu');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
