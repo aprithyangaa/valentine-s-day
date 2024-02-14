@@ -80,7 +80,7 @@
             if (answer === 'yes') {
                 document.body.innerHTML = `
                     <h1>I Love You Too!</h1>
-                    <p>Thank you for being my Valentine da. You mean everything to me, hope andha hamper unaku ipo vandhurukum.. athule oru letter iruku but athula sola mudiyathadhu sola than this one.. i feel so lucky and blessed to have you in my life! i never thought i would do all these for valentines day. i wanna cuddle with you now but we couldn't..  and I cherish every moment with you. Wishing us many more happy moments together!</p>
+                    <p>Thank you for being my Valentine da papa. You mean everything to me, andha hamper unaku vandhuduchi.. i saw you smiling in that video.. athule oru letter iruku but athula sola mudiyathadhu sola than this one.. i feel so lucky and blessed to have you in my life! Enaku una epome smile oda than pakanum baby.. andha vdo la ne andha letter pathu sirichadhu made my day!!! I love to make you happy.. I never thought I would do all these for valentines day. i wanna cuddle with you now but we couldn't.. nee vena en kaiya kati potu en mela sanjiko solura.. enaku lube varudhu... i want to be with you now.. aaw ithuku mela inga vendam nee enaku call or text panu athule pesulam.. we r gonna speaak something important tonight darling.. I Love you soooooo much kutty and I cherish every moment with you. Happy valentine's day! Wishing us many more happy moments together!</p>
                 `;
             } else {
                 alert('Kondruven!! olunga yes click panu');
